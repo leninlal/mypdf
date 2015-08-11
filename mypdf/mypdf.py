@@ -59,7 +59,7 @@ class MyPdfXBlock(XBlock):
         
         frag = Fragment(html)
         frag.add_css(self.load_resource("static/css/mypdf.css"))
-        frag.add_javascript(self.load_resource("static/js/mypdf_view.js"))
+        frag.add_javascript(self.load_resource("static/js/src/mypdf_view.js"))
         frag.initialize_js('pdfXBlockInitView')
         return frag
 
@@ -76,7 +76,7 @@ class MyPdfXBlock(XBlock):
         html = self.render_template('static/html/mypdf_edit.html', context)
         
         frag = Fragment(html)
-        frag.add_javascript(self.load_resource("static/js/mypdf_edit.js"))
+        frag.add_javascript(self.load_resource("static/js/src/mypdf_edit.js"))
         frag.initialize_js('pdfXBlockInitEdit')
         return frag
 
