@@ -23,7 +23,7 @@ class MyPdfXBlock(XBlock):
     url = String(display_name="PDF URL",
         default="http://www.tutorialspoint.com/python/python_tutorial.pdf",
         scope=Scope.content,
-        help="The URL for your PDF.")
+        help="URL for your PDF.")
     
     allow_download = Boolean(display_name="PDF Download Allowed",
         default=True,
